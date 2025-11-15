@@ -1,0 +1,155 @@
+:root {
+    --bg: #f3f7fb;
+    --card: #ffffff;
+    --accent: #2b8cff;
+    --muted: #6b7280;
+    --error: #ef4444;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    margin: 0;
+    background: var(--bg);
+    color: #111
+}
+
+.app-root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+.container {
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 16px
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    background: var(--card);
+    box-shadow: 0 1px 4px rgba(2, 6, 23, 0.06);
+}
+
+.nav a {
+    color: var(--muted);
+    text-decoration: none
+}
+
+.nav a:hover {
+    color: var(--accent)
+}
+
+.title {
+    font-weight: 700;
+    color: var(--accent)
+}
+
+.page-card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(2, 6, 23, 0.04)
+}
+
+.board-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center
+}
+
+.timer {
+    font-weight: 600;
+    margin-bottom: 8px
+}
+
+.controls {
+    display: flex;
+    gap: 8px
+}
+
+.button {
+    background: var(--accent);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer
+}
+
+.button--ghost {
+    background: transparent;
+    border: 1px solid #ddd;
+    color: #333
+}
+
+
+/* Grid */
+.sudoku-board {
+    display: grid;
+    gap: 0;
+    user-select: none
+}
+
+.cell {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    font-weight: 600;
+    cursor: text
+}
+
+.cell--prefill {
+    background: #eef2ff;
+    color: #111
+}
+
+.cell--selected {
+    outline: 3px solid rgba(43, 140, 255, 0.12)
+}
+
+.cell--incorrect {
+    border-color: var(--error);
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.06)
+}
+
+.cell:hover {
+    background: #f8fafc
+}
+
+.subgrid-border-right {
+    border-right: 3px solid #cbd5e1
+}
+
+.subgrid-border-bottom {
+    border-bottom: 3px solid #cbd5e1
+}
+
+
+@media (max-width:600px) {
+    .cell {
+        width: 36px;
+        height: 36px;
+        font-size: 14px
+    }
+}
+
+
+/* small helper */
+.meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px
+}
