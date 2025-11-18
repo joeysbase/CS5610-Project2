@@ -45,4 +45,5 @@
 - Q: What bonus points did you accomplish?  Please link to code where relevant and add any required details.
 - A: N/A
 # Website Link
-![sudoku](https://cs5610-project2-ns4a.onrender.com)
+[sudoku](https://cs5610-project2-ns4a.onrender.com)
+
