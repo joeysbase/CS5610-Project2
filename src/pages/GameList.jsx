@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 
 const MOCK = [
-{name:'Sudoku — Easy', url:'/games/easy', author:'You'},
-{name:'Sudoku — Normal', url:'/games/normal', author:'You'}
+{name:'Sudoku — Easy', url:'/games/easy', author:'Jack'},
+{name:'Sudoku — Normal', url:'/games/normal', author:'Bill'}
 ]
 
 

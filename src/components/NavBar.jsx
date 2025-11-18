@@ -6,7 +6,7 @@ export default function NavBar(){
 return (
 <nav className="nav">
 <div style={{flex:1}}>
-<Link to="/" className="title">Sudoku Project</Link>
+<Link to="/" className="title">Sudoku</Link>
 </div>
 <Link to="/games">Games</Link>
 <Link to="/scores">High Scores</Link>

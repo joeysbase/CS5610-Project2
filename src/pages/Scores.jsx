@@ -2,9 +2,9 @@ import React from 'react'
 
 
 const MOCK = [
-{user:'alice', wins:34},
-{user:'bob', wins:21},
-{user:'carol', wins:17},
+{user:'V', wins:34},
+{user:'Walter', wins:21},
+{user:'Pinkman', wins:17},
 ]
 
 
