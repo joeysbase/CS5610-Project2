@@ -1,10 +1,9 @@
 import React, { useContext, useEffect } from 'react'
-import { SudokuContext } from '../context/SudokuContext'
-import { generatePuzzle } from '../utils/generator'
+import { SudokuContext } from '../sudoku/SudokuContext'
+import { generatePuzzle } from '../sudoku/generator'
 import Timer from '../components/Timer'
 import GameBoard from '../components/GameBoard'
 import NewResetBar from '../components/NewResetBar'
-import NumberPad from '../components/NumberPad'
 
 
 export default function GameNormal(){
@@ -22,7 +21,7 @@ return (
 </div>
 <GameBoard />
 <NewResetBar />
-<NumberPad />
+
 </div>
 )
 }

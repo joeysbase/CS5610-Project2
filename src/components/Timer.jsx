@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { SudokuContext } from '../context/SudokuContext'
+import { SudokuContext } from '../sudoku/SudokuContext'
 
 
 export default function Timer(){

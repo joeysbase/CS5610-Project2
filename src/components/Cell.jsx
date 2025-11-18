@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useEffect } from 'react'
-import { SudokuContext } from '../context/SudokuContext'
-import { isValidPlacement } from '../utils/validator'
+import { SudokuContext } from '../sudoku/SudokuContext'
+import { isValidPlacement } from '../sudoku/validator'
 
 
 export default function Cell({ r, c, size }){
@@ -54,7 +54,8 @@ if (incorrect) classes.push('cell--incorrect')
 
 
 // compute border classes for block separators
-const block = size === 9 ? {rows:3, cols:3} : {rows:2, cols:3}
+// const block = size === 9 ? {rows:3, cols:3} : {rows:2, cols:3}
+const block = {rows:3, cols:3}
 if ((c+1) % block.cols === 0 && c !== size-1) classes.push('subgrid-border-right')
 if ((r+1) % block.rows === 0 && r !== size-1) classes.push('subgrid-border-bottom')
 

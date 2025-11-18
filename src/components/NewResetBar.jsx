@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { SudokuContext } from '../context/SudokuContext'
-import { generatePuzzle } from '../utils/generator'
+import { SudokuContext } from '../sudoku/SudokuContext'
+import { generatePuzzle } from '../sudoku/generator'
 
 
 export default function NewResetBar(){
